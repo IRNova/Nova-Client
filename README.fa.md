@@ -165,3 +165,11 @@ Made with ❤️ for a free and open internet.
 <img src="https://raw.githubusercontent.com/IRNova/Nova-Proxy/main/flag-iran.svg" height="18" alt="Iran" />
 
 </div>
+
+---
+
+<div align="center">
+
+ساخته شده توسط <a href="https://github.com/iiviirv"><b>@iiviirv</b></a> برای گروه نوا پروکسی.
+
+</div>

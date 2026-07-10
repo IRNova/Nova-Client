@@ -162,3 +162,11 @@ If Nova helps you, please **⭐ star the repo** and consider a small donation �
 Made with ❤️ for a free and open internet.
 
 </div>
+
+---
+
+<div align="center">
+
+Built by <a href="https://github.com/iiviirv"><b>@iiviirv</b></a> for the Nova Proxy Group.
+
+</div>
