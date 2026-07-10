@@ -49,7 +49,7 @@
     </td>
     <!-- iOS Card -->
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
-      <img src="https://img.icons8.com/color/96/mac-os--v1.png" width="54" alt="iOS" /><br/>
+      <img src="https://img.icons8.com/ios-filled/96/ffffff/mac-os.png" width="54" alt="iOS" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #818cf8;">آیفون و آیپد (iOS)</h3>
       <p style="margin: 0; font-size: 13px; color: #94a3b8;">به‌زودی (Coming Soon)</p>
       <br/>
