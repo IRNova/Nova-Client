@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iiviirv/irnova-site/main/brand/nova-logo-gradient.svg" width="96" alt="Nova" />
+<img src="brand/nova-logo.png" width="96" alt="Nova" />
 
 <div align="right">
   <a href="README.md"><img src="https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/gb.svg" height="12" alt="English" /> English</a>
