@@ -1,0 +1,15 @@
+/.gradle
+/captures/
+/local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# libbox.aar is built by CI (see .github/workflows/build-apk.yml) and copied
+# into app/libs/ at build time. It is GPLv3 + large, so it is not committed.
+app/libs/*.aar
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+**/*.jks

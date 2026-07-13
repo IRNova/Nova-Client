@@ -1,0 +1,164 @@
+/* =============================================================================
+   Nova Proxy — Design Tokens
+   -----------------------------------------------------------------------------
+   The single source of truth for the Nova Proxy visual language (colors,
+   gradient, typography, radii, layout, elevation), extracted from the marketing
+   site (novaproxy.online) so the in-Worker dashboard, /install wizard, /login,
+   and Telegram Mini App all share one look.
+
+   Framework-agnostic: plain CSS custom properties, no build step, no
+   dependencies. Drop this file into the bundled dashboard and reference the
+   variables (e.g. `background: var(--bg); color: var(--text);`).
+
+   USAGE
+   -----
+     <link rel="stylesheet" href="tokens.css">           (or inline the :root blocks)
+     <html data-theme="dark">  ... default, can be omitted
+     <html data-theme="light"> ... opt-in light theme
+
+   Dark is the default theme. Add `data-theme="light"` on <html> (or any
+   ancestor) to switch. To follow the OS preference automatically, see the
+   `prefers-color-scheme` block at the bottom (commented out by default).
+
+   FONTS
+   -----
+   Latin UI uses Inter; Farsi/Arabic script uses Vazirmatn. Load them however
+   you like (self-hosted, @fontsource, or a CDN), e.g.:
+     @import url('https://cdn.jsdelivr.net/npm/vazirmatn@33/Vazirmatn-font-face.css');
+   Then set the font on <body>, switching to --font-fa when lang="fa":
+     body            { font-family: var(--font-sans); }
+     html[lang=fa] body { font-family: var(--font-fa); line-height: 1.75; }
+   ============================================================================= */
+
+:root,
+:root[data-theme='dark'] {
+  /* ---- Brand accents ---- */
+  --cyan: #22d3ee;            /* primary accent — links, eyebrows, focus */
+  --violet: #a855f7;          /* secondary accent */
+  --indigo: #818cf8;          /* gradient midpoint / featured highlights */
+  --indigo-strong: #6366f1;   /* badges, emphasis on light surfaces */
+
+  /* Signature gradient — used for primary buttons, logo, gradient text,
+     progress bars, active toggles, the brand dot, etc. */
+  --grad: linear-gradient(120deg, #22d3ee 0%, #818cf8 50%, #a855f7 100%);
+  /* Foreground placed ON TOP of the gradient (dark ink reads on the bright
+     gradient in both themes). */
+  --on-accent: #05060a;
+
+  /* ---- Backgrounds & surfaces ---- */
+  --bg: #05060a;              /* page background */
+  --bg-alt: #090b12;          /* alternating section background */
+  --surface: rgba(255, 255, 255, 0.04);   /* cards, inputs, chips */
+  --surface-2: rgba(255, 255, 255, 0.06); /* hover / raised surface */
+  --nav-bg: rgba(5, 6, 10, 0.7);          /* sticky header (with backdrop blur) */
+  --code-bg: #0b0e16;        /* code blocks, textareas, terminal output */
+
+  /* ---- Borders ---- */
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* ---- Text ---- */
+  --text: #eef1f7;           /* primary text */
+  --muted: #9aa4b8;          /* secondary / supporting text */
+  --on-pill: #cfe8ff;        /* text inside translucent accent pills/code */
+
+  /* ---- State / feedback ---- */
+  --success: #7ee0b8;
+  --success-strong: #047857;
+  --warning: #f59e0b;
+  --info: #a855f7;           /* informational notes share the violet accent */
+  --danger: #ef4444;
+  --star: #ffd479;           /* GitHub-star / amber highlight */
+
+  /* ---- Social brand colors ---- */
+  --brand-telegram-1: #2aabee;
+  --brand-telegram-2: #229ed9;
+  --brand-youtube: #ff0000;
+  --brand-x: #000000;
+
+  /* ---- Layout ---- */
+  --radius: 16px;            /* default card radius */
+  --radius-sm: 10px;         /* inputs, small chips, notes */
+  --radius-pill: 999px;      /* pills, toggles, round buttons */
+  --maxw: 1140px;            /* max content width */
+
+  /* ---- Elevation ---- */
+  --shadow-accent: 0 10px 30px -10px rgba(99, 102, 241, 0.7); /* primary buttons */
+  --shadow-pop: 0 14px 30px rgba(0, 0, 0, 0.35);             /* menus / popovers */
+
+  /* ---- Typography ---- */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-fa: 'Vazirmatn', 'Inter', system-ui, -apple-system, 'Segoe UI', Tahoma, Arial, sans-serif;
+  --font-mono: 'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace;
+
+  /* Fluid type scale (matches the marketing site's clamp()s) */
+  --fs-display: clamp(2.4rem, 6vw, 4.2rem); /* hero h1 */
+  --fs-h1: clamp(2rem, 5vw, 2.9rem);
+  --fs-h2: clamp(1.9rem, 4vw, 2.7rem);
+  --fs-h3: 1.3rem;
+  --fs-body: 1rem;
+  --fs-sm: 0.92rem;
+  --fs-xs: 0.82rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --lh-tight: 1.15;  /* headings */
+  --lh-body: 1.6;    /* latin body */
+  --lh-fa: 1.75;     /* farsi body (script needs more room) */
+  --tracking-tight: -0.02em; /* headings */
+  --tracking-eyebrow: 0.16em; /* uppercased latin eyebrows (never apply to FA) */
+}
+
+/* =============================================================================
+   Light theme — opt in with data-theme="light"
+   ============================================================================= */
+:root[data-theme='light'] {
+  --bg: #f7f8fc;
+  --bg-alt: #eef1f7;
+  --surface: rgba(15, 23, 42, 0.04);
+  --surface-2: rgba(15, 23, 42, 0.07);
+  --nav-bg: rgba(247, 248, 252, 0.8);
+
+  --border: rgba(15, 23, 42, 0.12);
+  --border-strong: rgba(15, 23, 42, 0.22);
+
+  --text: #0d1117;
+  --muted: #51607a;
+  --on-pill: #0e7490;
+
+  /* Slightly deepened accents keep contrast on the light background. */
+  --cyan: #0891b2;
+  --violet: #9333ea;
+  --success: #047857;
+  --star: #b45309;
+}
+
+/* =============================================================================
+   Optional: follow the OS color scheme automatically.
+   Uncomment to make light theme kick in when the user prefers light AND no
+   explicit data-theme is set. (Keeps an explicit data-theme override winning.)
+   ============================================================================= */
+/*
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg: #f7f8fc;
+    --bg-alt: #eef1f7;
+    --surface: rgba(15, 23, 42, 0.04);
+    --surface-2: rgba(15, 23, 42, 0.07);
+    --nav-bg: rgba(247, 248, 252, 0.8);
+    --border: rgba(15, 23, 42, 0.12);
+    --border-strong: rgba(15, 23, 42, 0.22);
+    --text: #0d1117;
+    --muted: #51607a;
+    --on-pill: #0e7490;
+    --cyan: #0891b2;
+    --violet: #9333ea;
+    --success: #047857;
+    --star: #b45309;
+  }
+}
+*/

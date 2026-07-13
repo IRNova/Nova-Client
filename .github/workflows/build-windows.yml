@@ -1,0 +1,59 @@
+name: Build Windows
+
+# Builds the Nova Client Windows desktop app (bundling the committed
+# sing-box-windows-amd64 core) and uploads a ready-to-run Nova-Windows.zip as a
+# workflow artifact. Runs on push to the desktop branch, and can also be
+# triggered manually.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - claude/macos-desktop-core
+    paths:
+      - 'lib/**'
+      - 'windows/**'
+      - 'pubspec.yaml'
+      - 'assets/**'
+      - '.github/workflows/build-windows.yml'
+
+jobs:
+  build-windows:
+    name: Build Windows desktop app
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.44.3
+
+      - name: Enable Windows desktop
+        run: flutter config --enable-windows-desktop
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Windows (release)
+        run: flutter build windows --release
+
+      # The sing-box core is no longer a Flutter asset (it bloated the mobile
+      # builds), so place it next to the built .exe where DesktopProxyController
+      # looks for it.
+      - name: Bundle sing-box core next to the app
+        run: Copy-Item assets/bin/sing-box-windows-amd64.exe -Destination build/windows/x64/runner/Release/ -Force
+
+      # wintun.dll is required for TUN (full-device) mode; sing-box loads it from
+      # beside the core. Proxy mode (the default) doesn't need it.
+      - name: Bundle wintun.dll next to the app
+        run: Copy-Item assets/bin/wintun.dll -Destination build/windows/x64/runner/Release/ -Force
+
+      - name: Package Nova-Windows.zip
+        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath Nova-Windows.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nova-Windows
+          path: Nova-Windows.zip
+          if-no-files-found: error
