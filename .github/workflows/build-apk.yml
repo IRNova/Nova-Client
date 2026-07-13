@@ -1,0 +1,113 @@
+name: Build APK
+
+# Builds the real, working Nova Client APK: compiles the sing-box core to an
+# Android library (libbox.aar) via gomobile, then assembles the Flutter APK with
+# it. The AAR is cached (keyed on the sing-box version), so the slow gomobile
+# build only runs once.
+#
+# arm64-v8a only for now (covers virtually all modern phones) to keep build time
+# reasonable; add more ABIs later by widening the -platform list.
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+env:
+  SINGBOX_VERSION: v1.13.13
+  NDK_VERSION: "28.0.13004108"
+
+jobs:
+  build-apk:
+    name: Build release APK (with sing-box core)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24.7"
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Cache libbox.aar
+        id: libbox-cache
+        uses: actions/cache@v4
+        with:
+          path: android/app/libs/libbox.aar
+          key: libbox-${{ env.SINGBOX_VERSION }}-ndk${{ env.NDK_VERSION }}-arm64-v1
+
+      - name: Install Android NDK ${{ env.NDK_VERSION }}
+        if: steps.libbox-cache.outputs.cache-hit != 'true'
+        run: |
+          # No pipefail: `yes` dies with SIGPIPE once sdkmanager stops reading,
+          # which is expected. Verify the install succeeded by checking the dir.
+          set -eu
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;${NDK_VERSION}" >/dev/null || true
+          test -d "$ANDROID_HOME/ndk/${NDK_VERSION}"
+          echo "NDK installed at $ANDROID_HOME/ndk/${NDK_VERSION}"
+
+      - name: Build libbox.aar (sing-box ${{ env.SINGBOX_VERSION }})
+        if: steps.libbox-cache.outputs.cache-hit != 'true'
+        run: |
+          set -euxo pipefail
+          export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/${NDK_VERSION}"
+          export NDK="$ANDROID_NDK_HOME"
+          git clone --branch "$SINGBOX_VERSION" --depth 1 https://github.com/SagerNet/sing-box /tmp/sing-box
+          cd /tmp/sing-box
+          make lib_install
+          export PATH="$PATH:$(go env GOPATH)/bin"
+          # Builds libbox.aar (api23) + libbox-legacy.aar (api21); we keep the main one.
+          go run ./cmd/internal/build_libbox -target android -platform android/arm64
+          ls -lh libbox.aar
+          mkdir -p "$GITHUB_WORKSPACE/android/app/libs"
+          cp libbox.aar "$GITHUB_WORKSPACE/android/app/libs/libbox.aar"
+
+      - name: Verify libbox.aar is present
+        run: |
+          set -eux
+          test -f android/app/libs/libbox.aar
+          ls -lh android/app/libs/libbox.aar
+
+      - name: Install Flutter dependencies
+        run: flutter pub get
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Stage APK
+        run: |
+          set -eux
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk dist/nova-client.apk
+          ls -lh dist
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nova-client-apk
+          path: dist/nova-client.apk
+          if-no-files-found: error
+
+      - name: Attach APK to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/nova-client.apk
+          generate_release_notes: true

@@ -1,0 +1,80 @@
+name: nova_client
+description: >-
+  Nova Client, an optimised, Nova-branded proxy client (a streamlined Karing
+  fork) with the Nova Radar Cloudflare clean-IP scanner built in. Follows the
+  Nova Proxy design language.
+publish_to: "none"
+version: 0.2.0+59
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+  # QR-code scanning for importing configs/subscriptions from a camera.
+  # 7.x ships Swift Package Manager support, so no CocoaPods is required.
+  mobile_scanner: ^7.2.0
+
+  # Persistence for profiles, radar sources/ports and theme/locale.
+  shared_preferences: ^2.2.0
+
+  # Opening the Nova Proxy links from Settings.
+  url_launcher: ^6.2.0
+
+  # Desktop proxy core: manage the bundled sing-box process and read its
+  # Clash API for live traffic stats.
+  http: ^1.2.0
+  path_provider: ^2.1.0
+
+  # Cloudflare OAuth (PKCE) + the Workers deploy multipart upload.
+  crypto: ^3.0.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/brand/
+    # NOTE: assets/bin/ (the desktop sing-box cores, ~80 MB) is deliberately NOT
+    # a Flutter asset. Bundling it here shipped both desktop binaries inside the
+    # Android APK and iOS app that never use them (they run libbox / the Network
+    # Extension), bloating the mobile download to ~77 MB. The desktop builds get
+    # the core placed next to their executable instead (macOS: Contents/Resources
+    # via the packaging step; Windows: next to the .exe via the CI copy step),
+    # and DesktopProxyController loads it from there.
+    # Bundled sing-box rule-sets (binary .srs) shipped to the iOS Network
+    # Extension for offline Iran-direct routing + ad blocking (no startup fetch).
+    - assets/rulesets/
+
+  # Farsi/Arabic script renders in Vazirmatn (bundled below). Latin UI uses Inter
+  # when its files are present under assets/fonts/, otherwise the system sans
+  # fallback declared in NovaTypography. To also embed Inter, drop the Inter
+  # .ttf files under assets/fonts/ and add an "Inter" family block mirroring the
+  # Vazirmatn one.
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+        - asset: assets/fonts/Vazirmatn-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Vazirmatn-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Vazirmatn-ExtraBold.ttf
+          weight: 800
