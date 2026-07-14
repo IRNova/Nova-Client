@@ -42,7 +42,7 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/android-os.png" width="54" alt="Android" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #22d3ee;">Android</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=green" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Direct_APK-0ea5e9?style=for-the-badge&logo=android&logoColor=white" /></a>
@@ -51,7 +51,7 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/ios-filled/96/ffffff/mac-os.png" width="54" alt="iOS" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #818cf8;">iOS / iPadOS</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">Coming Soon</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">TestFlight (beta)</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=apple&logoColor=white" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/TestFlight-00d3a5?style=for-the-badge&logo=testflight&logoColor=white" /></a>
@@ -60,7 +60,7 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/windows-11.png" width="54" alt="Windows" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #a855f7;">Windows</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Windows_EXE-0078D4?style=for-the-badge&logo=windows&logoColor=white" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Portable_ZIP-3b82f6?style=for-the-badge&logo=files&logoColor=white" /></a>
@@ -71,7 +71,7 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/ios-filled/96/ffffff/mac-os.png" width="54" alt="macOS" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #22d3ee;">macOS</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/macOS_DMG-000000?style=for-the-badge&logo=apple&logoColor=white" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Intel_/_Silicon-818cf8?style=for-the-badge" /></a>
@@ -80,7 +80,7 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/linux.png" width="54" alt="Linux" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #a855f7;">Linux</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Linux_AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Tarball_XZ-3b82f6?style=for-the-badge" /></a>
@@ -101,12 +101,25 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
 
 ---
 
+## ✨ What's new in v1.1.0-beta
+
+The proxy is now live on **every platform** (Android, iOS, Windows, macOS), and the server experience got a big upgrade:
+
+- 🌍 **Rich server list**: every node shows its country and city, protocol (VLESS / VMess / Trojan / Shadowsocks / Hysteria2 / TUIC), transport (WS / gRPC, TLS / Reality), TLS fingerprint and SNI, and a live latency in milliseconds.
+- 🔎 **Search your nodes**: filter servers by name, country, protocol, address or SNI.
+- ⚡ **Auto (fastest)**: Nova picks the lowest‑latency working node for you, and fails over automatically if one goes down.
+- 🆓 **Free forever, no reselling**: a clear "Nova is free, never pay anyone for these configs" banner, plus one‑tap **Follow Nova** buttons (Telegram, Instagram, GitHub, website) so you always reach the real community.
+- 🇮🇷 **Smart routing for Iran**: Iranian (`.ir`) sites go direct on your real IP so they keep loading fast, even when a rule‑set can't download. Optional ad‑blocking and LAN bypass too.
+- 🌐 **Bilingual everywhere**: the whole app, including these new screens, in English and فارسی (RTL).
+
+---
+
 ### 📖 What this is
 Nova Client brings two Nova tools into a single cross‑platform app:
 1. **A proxy client** in the spirit of Karing (a sing‑box GUI) — connect, manage profiles & subscriptions, and control routing — re‑skinned and slimmed down to the Nova Proxy visual language.
 2. **Nova Radar** — the Cloudflare clean‑IP scanner (originally a Go + Wails desktop app) **ported to Dart** and consolidated in as a first‑class tab.
 
-This milestone delivers the **design system**, the **app shell**, and a **fully functional Radar**. The proxy data path (the modified sing‑box core) is wired behind a clean integration boundary.
+As of **v1.1.0-beta** the proxy data path is live: the sing‑box core connects on all four platforms, with subscription parsing, per‑node latency, smart routing, and the Nova Radar scanner all working.
 
 ### 📊 Status at a glance
 
@@ -118,9 +131,10 @@ This milestone delivers the **design system**, the **app shell**, and a **fully 
 | Bilingual UI (English + فارسی, RTL) | ✅ |
 | Dashboard (connect orb, live traffic, active profile) | ✅ UI · drives the proxy controller |
 | Profiles & subscriptions (add / select / persist) | ✅ |
-| Routing controls (mode + rule toggles) | ✅ UI |
+| Routing controls (mode + rule toggles, `.ir` direct) | ✅ |
+| Server list (per‑node latency, country/city, protocol, transport, SNI, search) | ✅ |
 | **Nova Radar scanner** | ✅ **Functional** (source fetch → IP gen → two‑phase TCP+TLS verify → latency sort → live progress → export) |
-| sing‑box core (native VPN data path) | 🔌 Integration boundary (next milestone) |
+| sing‑box core (native VPN data path) | ✅ Live on Android · iOS · Windows · macOS |
 
 ### 🎨 Design language
 The whole UI is driven by the Nova Proxy design tokens, ported 1:1 from `irnova-site/design-system/tokens.css` (kept here at `docs/nova-design-tokens.css` for provenance):
@@ -139,9 +153,9 @@ The Go backend (`scanner.go` / `sources.go`) was reimplemented in pure Dart usin
 5. Sort fastest‑first, stream results live, and export as `ip:port#Nova-XXXXX`.
 
 ### 🗺️ Roadmap
-- [ ] Native sing‑box core + per‑platform VPN service behind `SingboxProxyController`.
-- [ ] Subscription parsing & node health‑check / ping.
-- [ ] One‑click “use this IP” — feed a Radar result straight into the active profile.
+- [x] Native sing‑box core + per‑platform VPN service behind `SingboxProxyController`.
+- [x] Subscription parsing & node health‑check / ping.
+- [x] One‑click “use this IP” — feed a Radar result straight into the active profile.
 - [ ] iCloud / WebDAV profile sync (Karing parity).
 
 ### 👥 Credits & Support
