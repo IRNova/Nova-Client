@@ -42,7 +42,7 @@
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/android-os.png" width="54" alt="Android" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #22d3ee;">اندروید (Android)</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=green" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Direct_APK-0ea5e9?style=for-the-badge&logo=android&logoColor=white" /></a>
@@ -51,7 +51,7 @@
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/ios-filled/96/ffffff/mac-os.png" width="54" alt="iOS" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #818cf8;">آیفون و آیپد (iOS)</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">به‌زودی (Coming Soon)</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">تست‌فلایت (نسخه بتا)</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=apple&logoColor=white" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/TestFlight-00d3a5?style=for-the-badge&logo=testflight&logoColor=white" /></a>
@@ -60,7 +60,7 @@
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/windows-11.png" width="54" alt="Windows" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #a855f7;">ویندوز (Windows)</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Windows_EXE-0078D4?style=for-the-badge&logo=windows&logoColor=white" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Portable_ZIP-3b82f6?style=for-the-badge&logo=files&logoColor=white" /></a>
@@ -71,7 +71,7 @@
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/ios-filled/96/ffffff/mac-os.png" width="54" alt="macOS" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #22d3ee;">مک (macOS)</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/macOS_DMG-000000?style=for-the-badge&logo=apple&logoColor=white" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Intel_/_Silicon-818cf8?style=for-the-badge" /></a>
@@ -80,7 +80,7 @@
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/linux.png" width="54" alt="Linux" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #a855f7;">لینوکس (Linux)</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.0.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
       <br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Linux_AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" /></a><br/>
       <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Tarball_XZ-3b82f6?style=for-the-badge" /></a>
@@ -101,12 +101,25 @@
 
 ---
 
+## ✨ تازه‌های نسخه v1.1.0-beta
+
+پروکسی حالا روی **تمام پلتفرم‌ها** (اندروید، iOS، ویندوز و مک) فعال است و تجربه‌ی لیست سرورها به‌طور کامل ارتقا یافته است:
+
+- 🌍 **لیست کامل سرورها**: هر سرور کشور و شهر، پروتکل (VLESS / VMess / Trojan / Shadowsocks / Hysteria2 / TUIC)، نوع انتقال (WS / gRPC و TLS / Reality)، اثرانگشت TLS و SNI، و تأخیر زنده بر حسب میلی‌ثانیه را نمایش می‌دهد.
+- 🔎 **جستجوی سرورها**: فیلتر کردن سرورها بر اساس نام، کشور، پروتکل، آدرس یا SNI.
+- ⚡ **حالت خودکار (سریع‌ترین)**: نوا کم‌تأخیرترین سرور فعال را برایتان انتخاب می‌کند و اگر سروری قطع شود، به‌صورت خودکار به سرور بعدی سوییچ می‌کند.
+- 🆓 **همیشه رایگان، بدون فروش مجدد**: یک بنر واضح با پیام «نوا رایگان است، برای این کانفیگ‌ها به کسی پول ندهید»، به‌همراه دکمه‌های **دنبال کردن نوا** (تلگرام، اینستاگرام، گیت‌هاب و وب‌سایت) تا همیشه به جامعه‌ی رسمی نوا دسترسی داشته باشید.
+- 🇮🇷 **مسیریابی هوشمند برای ایران**: سایت‌های ایرانی (دامنه‌های `.ir`) با آی‌پی واقعی شما به‌صورت مستقیم باز می‌شوند تا همیشه سریع بارگذاری شوند، حتی وقتی لیست قوانین دانلود نشود. مسدودسازی تبلیغات و بایپس شبکه‌ی محلی (LAN) هم به‌صورت اختیاری در دسترس است.
+- 🌐 **دو زبانه در همه‌جا**: کل برنامه، از جمله همین صفحات جدید، به انگلیسی و فارسی (راست‌چین).
+
+---
+
 ### 📖 معرفی برنامه
 نوا کلاینت (Nova Client) دو ابزار قدرتمند پروژه نوا را در قالب یک نرم‌افزار چندسکویی یکپارچه می‌کند:
 ۱. **یک کلاینت پروکسی** با الهام از هسته و ساختار کاری کلاینت محبوب Karing (رابط گرافیکی sing-box) — جهت اتصال، مدیریت پروفایل‌ها و اشتراک‌ها و کنترل هوشمند مسیریابی که کاملاً بازطراحی شده و با هویت بصری مدرن نوا پروکسی هماهنگ شده است.
 ۲. **رادار نوا (Nova Radar)** — اسکنر پیشرفته یافتن آی‌پی‌های تمیز کلودفلر (که پیش از این به زبان Go و Wails برای دسکتاپ توسعه داده شده بود) که به زبان Dart پورت شده و به عنوان یک زبانه (Tab) مستقل و تراز اول در برنامه ادغام شده است.
 
-این نسخه شامل سیستم طراحی (Design System)، پوسته برنامه (App Shell) و **یک رادار کاملاً فعال و کاربردی** است. مسیر تبادل داده پروکسی (هسته بهینه‌سازی‌شده sing-box) به طور منظم در پشت یک مرز ادغام ایمن پیاده‌سازی شده است.
+از نسخه‌ی **v1.1.0-beta** مسیر تبادل داده‌ی پروکسی فعال است: هسته‌ی sing-box روی هر چهار پلتفرم متصل می‌شود و پارس اشتراک‌ها، تأخیر هر سرور، مسیریابی هوشمند و اسکنر رادار نوا همگی کار می‌کنند.
 
 ### 📊 وضعیت کنونی پروژه در یک نگاه
 
@@ -118,9 +131,10 @@
 | رابط کاربری دو زبانه | ✅ | پشتیبانی کامل از زبان‌های انگلیسی و فارسی (راست‌چین RTL) |
 | داشبورد اصلی | ✅ | طراحی جذاب اورب اتصال، نمایش زنده ترافیک و پروفایل فعال |
 | مدیریت پروفایل‌ها و اشتراک‌ها | ✅ | افزودن، انتخاب و ذخیره دائمی اشتراک‌ها |
-| کنترل‌های مسیریابی | ✅ | رابط کاربری تغییر حالت‌های مسیریابی و قوانین ترافیک |
+| کنترل‌های مسیریابی | ✅ | تغییر حالت‌های مسیریابی، قوانین ترافیک و مسیر مستقیم `.ir` |
+| لیست سرورها | ✅ | تأخیر هر سرور، کشور/شهر، پروتکل، نوع انتقال، SNI و جستجو |
 | **اسکنر بومی رادار نوا** | ✅ | **کاملاً فعال** (دریافت منابع ← تولید IP ← بررسی دو مرحله‌ای TCP+TLS ← مرتب‌سازی تأخیر ← خروجی) |
-| هسته sing-box | 🔌 | مرز ادغام بومی (در دست توسعه برای گام بعدی) |
+| هسته sing-box | ✅ | فعال روی اندروید · iOS · ویندوز · مک |
 
 ### 🎨 زبان طراحی (هویت بصری)
 تمام بخش‌های رابط کاربری بر اساس توکن‌های طراحی اختصاصی نوا پروکسی که مستقیماً پورت شده‌اند پیاده‌سازی شده است:
@@ -139,9 +153,9 @@
 ۵. مرتب‌سازی آی‌پی‌ها بر اساس کمترین تأخیر، نمایش زنده پیشرفت اسکن و خروجی نهایی با فرمت استاندارد `ip:port#Nova-XXXXX`.
 
 ### 🗺️ نقشه راه آینده (Roadmap)
-- [ ] ادغام هسته sing-box به همراه پیاده‌سازی سرویس بومی VPN برای هر پلتفرم پشت `SingboxProxyController`.
-- [ ] سیستم پارس و تحلیل هوشمند لینک‌های اشتراک و سنجش پینگ/سلامت سرورها.
-- [ ] امکان اعمال آی‌پی‌های تمیز رادار با یک کلیک روی پروفایل فعال.
+- [x] ادغام هسته sing-box به همراه پیاده‌سازی سرویس بومی VPN برای هر پلتفرم پشت `SingboxProxyController`.
+- [x] سیستم پارس و تحلیل هوشمند لینک‌های اشتراک و سنجش پینگ/سلامت سرورها.
+- [x] امکان اعمال آی‌پی‌های تمیز رادار با یک کلیک روی پروفایل فعال.
 - [ ] همگام‌سازی ابری اشتراک‌ها از طریق iCloud و WebDAV.
 
 ### 👥 توسعه‌دهندگان و حمایت
