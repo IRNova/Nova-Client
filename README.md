@@ -14,6 +14,9 @@ Built in Flutter · Dark‑first · Bilingual (English + فارسی) · Follows 
 
 [![License](https://img.shields.io/badge/license-MIT-purple?style=for-the-badge)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/IRNova/Nova-Client?style=for-the-badge&color=0ea5e9)](https://github.com/IRNova/Nova-Client)
+[![Developer](https://img.shields.io/badge/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%20Developer-Vahid%20Hashemi-8b5cf6?style=for-the-badge)](https://github.com/iiviirv)
+
+**Designed and developed by [Vahid Hashemi](https://github.com/iiviirv)**
 
 </div>
 
@@ -181,6 +184,6 @@ Made with ❤️ for a free and open internet.
 
 <div align="center">
 
-Built by <a href="https://github.com/iiviirv"><b>@iiviirv</b></a> for the Nova Proxy Group.
+Designed and developed by <a href="https://github.com/iiviirv"><b>Vahid Hashemi</b></a> (<a href="https://github.com/iiviirv">@iiviirv</a>) for the Nova Proxy Group.
 
 </div>

@@ -14,6 +14,9 @@
 
 [![License](https://img.shields.io/badge/license-MIT-purple?style=for-the-badge)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/IRNova/Nova-Client?style=for-the-badge&color=0ea5e9)](https://github.com/IRNova/Nova-Client)
+[![Developer](https://img.shields.io/badge/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%20%D8%AA%D9%88%D8%B3%D8%B9%D9%87%E2%80%8C%D8%AF%D9%87%D9%86%D8%AF%D9%87-Vahid%20Hashemi-8b5cf6?style=for-the-badge)](https://github.com/iiviirv)
+
+**طراحی و توسعه توسط [وحید هاشمی](https://github.com/iiviirv)**
 
 </div>
 
@@ -184,6 +187,6 @@ Made with ❤️ for a free and open internet.
 
 <div align="center">
 
-ساخته شده توسط <a href="https://github.com/iiviirv"><b>@iiviirv</b></a> برای گروه نوا پروکسی.
+طراحی و توسعه توسط <a href="https://github.com/iiviirv"><b>وحید هاشمی</b></a> (<a href="https://github.com/iiviirv">@iiviirv</a>) برای گروه نوا پروکسی.
 
 </div>
