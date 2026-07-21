@@ -11,7 +11,7 @@ A big anti-censorship update, by Vahid Hashemi.
 - Speed test: measure your real download and upload speed in the Stats tab.
 - Hysteria2 speed boost (Brutal) for better throughput on throttled networks; set your line speed in Routing.
 - Now targets Android 15.
-- Builds: Android in this release. macOS and Windows to follow.
+- Builds: Android APK, macOS (Apple Silicon) DMG and zip, and Windows portable ZIP.
 
 ## v1.1.1-beta (2026-07-16)
 
