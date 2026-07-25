@@ -80,9 +80,9 @@
 
   <text x="702" y="98" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="700" fill="#e6edf7">Nova Radar</text>
   <text x="702" y="120" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7f92ad">clean-IP scan</text>
-  <rect x="976" y="80" width="126" height="30" rx="15" fill="#0e2a20" stroke="#1c5c44"/>
-  <circle cx="996" cy="95" r="4.5" fill="#34d399"/>
-  <text x="1008" y="100" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" font-weight="600" fill="#6ee7b7">Connected</text>
+  <rect x="976" y="80" width="126" height="30" rx="15" fill="#0e2a20" stroke="#0e3a44"/>
+  <circle cx="996" cy="95" r="4.5" fill="#22d3ee"/>
+  <text x="1008" y="100" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" font-weight="600" fill="#22d3ee">Connected</text>
 
   <!-- radar scope -->
   <g transform="translate(902 214)">
@@ -116,9 +116,9 @@
   <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14.5">
     <circle cx="702" cy="343" r="4" fill="#22d3ee"/>
     <text x="716" y="348" fill="#c7d2e5">162.159.204.11:443</text>
-    <text x="1102" y="348" text-anchor="end" fill="#6ee7b7">28 ms</text>
+    <text x="1102" y="348" text-anchor="end" fill="#22d3ee">28 ms</text>
     <circle cx="702" cy="367" r="4" fill="#818cf8"/>
     <text x="716" y="372" fill="#c7d2e5">104.16.132.229:443</text>
-    <text x="1102" y="372" text-anchor="end" fill="#6ee7b7">41 ms</text>
+    <text x="1102" y="372" text-anchor="end" fill="#22d3ee">41 ms</text>
   </g>
 </svg>
