@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="132" viewBox="0 0 1200 132" role="img" aria-labelledby="t d">
+  <title id="t">Nova Client section: What's new. A richer server list, search, auto-fastest, and smart routing.</title>
+  <desc id="d">Nova Client section: What's new. A richer server list, search, auto-fastest, and smart routing.</desc>
+  <defs>
+    <linearGradient id="nova" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bx"><rect x="0" y="0" width="1200" height="132" rx="20"/></clipPath>
+  </defs>
+  <rect width="1200" height="132" rx="20" fill="#080b12"/>
+  <g clip-path="url(#bx)">
+    <ellipse cx="66" cy="66" rx="260" ry="150" fill="url(#glow)"/>
+    <path d="M1140 132 A60 60 0 0 1 1200 72" fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.13"/>
+    <path d="M1104 132 A96 96 0 0 1 1200 36" fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.09"/>
+    <path d="M1068 132 A132 132 0 0 1 1200 0" fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.06"/>
+    <circle cx="1200" cy="132" r="5" fill="url(#nova)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="131" rx="19.5" fill="none" stroke="#1b2333"/>
+  <rect x="32" y="32" width="68" height="68" rx="18" fill="url(#nova)"/>
+  <g transform="translate(0 0)"><path d="M66 46 L71.5 60.5 L86 66 L71.5 71.5 L66 86 L60.5 71.5 L46 66 L60.5 60.5 Z" fill="#fff"/>
+   <circle cx="84" cy="49" r="3" fill="#fff" opacity="0.9"/></g>
+  <text x="124" y="62" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="30" font-weight="800" fill="#edf2fa">What's new</text>
+  <text x="124" y="96" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="500" fill="#93a4bd">A richer server list, search, auto-fastest, and smart routing.</text>
+  <rect x="1006" y="38" width="158" height="34" rx="17" fill="#0d1524" stroke="#26324a"/>
+  <circle cx="1028" cy="55" r="4.5" fill="url(#nova)"/>
+  <text x="1044" y="60" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" font-weight="600" fill="#c7d2e5">v1.1.0-beta</text>
+</svg>

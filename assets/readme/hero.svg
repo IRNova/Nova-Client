@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="t d">
+  <title id="t">Nova Client</title>
+  <desc id="d">Nova Client, an optimised Nova-branded proxy client with the Nova Radar Cloudflare clean-IP scanner built in. Built in Flutter, dark-first, bilingual, Android shipped.</desc>
+  <defs>
+    <linearGradient id="nova" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowV" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#a5f3fc"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </radialGradient>
+    <clipPath id="card"><rect x="676" y="60" width="452" height="320" rx="24"/></clipPath>
+    <clipPath id="frame"><rect width="1200" height="430" rx="26"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="430" rx="26" fill="#05060a"/>
+  <g clip-path="url(#frame)">
+    <ellipse cx="150" cy="70" rx="420" ry="300" fill="url(#glowC)"/>
+    <ellipse cx="1080" cy="400" rx="460" ry="320" fill="url(#glowV)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="429" rx="25.5" fill="none" stroke="#141a26"/>
+
+  <!-- Left: identity -->
+  <rect x="72" y="64" width="88" height="88" rx="22" fill="url(#nova)"/>
+  <path d="M94 133 L94 83 L138 133 L138 83" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="180" y="98" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#7f92ad">NOVA ECOSYSTEM</text>
+  <circle cx="360" cy="93" r="3" fill="#4a5a76"/>
+  <text x="376" y="98" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#7f92ad">CLIENT APP</text>
+
+  <text x="178" y="142" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="46" font-weight="800" fill="url(#nova)">Nova Client</text>
+
+  <text x="72" y="212" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="25" font-weight="500" fill="#cdd8ea">An optimised, Nova-branded proxy client with the</text>
+  <text x="72" y="248" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="25" font-weight="500" fill="#cdd8ea"><tspan font-weight="700" fill="#22d3ee">Nova Radar</tspan> clean-IP scanner built right in.</text>
+
+  <!-- proof chips -->
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="600">
+    <g>
+      <rect x="72" y="288" width="198" height="42" rx="21" fill="#0d1524" stroke="#26324a"/>
+      <circle cx="94" cy="309" r="4.5" fill="url(#nova)"/>
+      <text x="108" y="315" fill="#dbe4f2">Built in Flutter</text>
+    </g>
+    <g>
+      <rect x="284" y="288" width="140" height="42" rx="21" fill="#0d1524" stroke="#26324a"/>
+      <circle cx="306" cy="309" r="4.5" fill="url(#nova)"/>
+      <text x="320" y="315" fill="#dbe4f2">Dark-first</text>
+    </g>
+    <g>
+      <rect x="72" y="342" width="150" height="42" rx="21" fill="#0d1524" stroke="#26324a"/>
+      <circle cx="94" cy="363" r="4.5" fill="url(#nova)"/>
+      <text x="108" y="369" fill="#dbe4f2">Bilingual</text>
+    </g>
+    <g>
+      <rect x="236" y="342" width="188" height="42" rx="21" fill="#0d1524" stroke="#26324a"/>
+      <circle cx="258" cy="363" r="4.5" fill="url(#nova)"/>
+      <text x="272" y="369" fill="#dbe4f2">Android shipped</text>
+    </g>
+  </g>
+
+  <!-- Right: radar / connect card -->
+  <rect x="676" y="60" width="452" height="320" rx="24" fill="#0a0e18" stroke="#1c2740"/>
+  <g clip-path="url(#card)">
+    <ellipse cx="902" cy="150" rx="240" ry="180" fill="url(#glowC)"/>
+  </g>
+
+  <text x="702" y="98" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="700" fill="#e6edf7">Nova Radar</text>
+  <text x="702" y="120" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7f92ad">clean-IP scan</text>
+  <rect x="976" y="80" width="126" height="30" rx="15" fill="#0e2a20" stroke="#1c5c44"/>
+  <circle cx="996" cy="95" r="4.5" fill="#34d399"/>
+  <text x="1008" y="100" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" font-weight="600" fill="#6ee7b7">Connected</text>
+
+  <!-- radar scope -->
+  <g transform="translate(902 214)">
+    <circle r="96" fill="none" stroke="#1c3a48" stroke-width="1"/>
+    <circle r="72" fill="none" stroke="#183342" stroke-width="1"/>
+    <circle r="48" fill="none" stroke="#183342" stroke-width="1"/>
+    <circle r="24" fill="none" stroke="#183342" stroke-width="1"/>
+    <line x1="-96" y1="0" x2="96" y2="0" stroke="#152a37" stroke-width="1"/>
+    <line x1="0" y1="-96" x2="0" y2="96" stroke="#152a37" stroke-width="1"/>
+    <path d="M0 0 L-8.4 -95.6 A96 96 0 0 1 73.5 -61.7 Z" fill="url(#sweep)"/>
+    <line x1="0" y1="0" x2="-8.4" y2="-95.6" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.85"/>
+    <!-- dim candidates -->
+    <circle cx="-38" cy="-70" r="3" fill="#33415c"/>
+    <circle cx="58" cy="30" r="3" fill="#33415c"/>
+    <circle cx="-62" cy="18" r="3" fill="#33415c"/>
+    <circle cx="20" cy="64" r="3" fill="#33415c"/>
+    <circle cx="70" cy="-18" r="3" fill="#33415c"/>
+    <!-- clean hits -->
+    <circle cx="38" cy="-58" r="8" fill="#22d3ee" opacity="0.18"/>
+    <circle cx="38" cy="-58" r="4" fill="#22d3ee"/>
+    <circle cx="-44" cy="-24" r="8" fill="#818cf8" opacity="0.18"/>
+    <circle cx="-44" cy="-24" r="4" fill="#818cf8"/>
+    <circle cx="24" cy="40" r="8" fill="#a855f7" opacity="0.18"/>
+    <circle cx="24" cy="40" r="4" fill="#a855f7"/>
+    <!-- connect orb core -->
+    <circle r="15" fill="url(#orb)"/>
+    <circle r="15" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+
+  <!-- results -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14.5">
+    <circle cx="702" cy="343" r="4" fill="#22d3ee"/>
+    <text x="716" y="348" fill="#c7d2e5">162.159.204.11:443</text>
+    <text x="1102" y="348" text-anchor="end" fill="#6ee7b7">28 ms</text>
+    <circle cx="702" cy="367" r="4" fill="#818cf8"/>
+    <text x="716" y="372" fill="#c7d2e5">104.16.132.229:443</text>
+    <text x="1102" y="372" text-anchor="end" fill="#6ee7b7">41 ms</text>
+  </g>
+</svg>
