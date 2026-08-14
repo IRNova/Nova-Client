@@ -1,5 +1,43 @@
 # Changelog
 
+## v1.3.0-beta (2026-08-14)
+
+An honesty update, by the Nova team. Nova now tells you what it actually knows
+about your servers instead of guessing, and shows you what it and the VPN core
+are doing.
+
+- The server you pick is the server you get. If the one you chose connects but
+  carries no traffic, Nova now tells you and stays on your choice instead of
+  quietly connecting through a different one while the list still showed yours
+  as selected. If your server has disappeared from the subscription, it says
+  that too, rather than switching in silence.
+- Ping numbers are real now. Nova used to show the time it took to open a
+  connection, which succeeds against Cloudflare's network for any address at
+  all, so every config looked healthy even on a network where none of them
+  worked. Each server is now tested by actually talking to it, and where
+  possible by sending a real request through it and waiting for the answer. A
+  server that cannot be tested from outside says so instead of borrowing a
+  number it did not earn.
+- Server locations are honest. A config sent with a clean Cloudflare address
+  used to be labelled with wherever that address happened to resolve, which is
+  not where your traffic comes out. Those now show the name the panel gave them
+  and say they are fronted, and configs that use a domain get a real flag,
+  which they never used to.
+- New Logs screen in Settings, with Nova's own log and the VPN core's log kept
+  separate. Copying strips passwords, UUIDs and subscription tokens first, so a
+  log is safe to send to support. Detailed core logging is a switch on that
+  screen, off by default.
+- AmneziaWG now actually works in Nova. The app has been building correct
+  AmneziaWG configurations all along and handing them to a core that did not
+  have the protocol in it, so a server's AmneziaWG worked in the official
+  Amnezia apps and not here. Nova's core is now built with AmneziaWG.
+- Nova also checks its own core before it tries. If a build ever ships without
+  AmneziaWG again, it says so instead of connecting to nothing.
+- The VPN core is now included for every processor type the app runs on. Older
+  32-bit phones and x86 devices were installing an app that had no core for
+  them, so they could open Nova and never connect. The download is larger
+  because of it.
+
 ## v1.2.0-beta (2026-07-21)
 
 A big anti-censorship update, by the Nova team.
