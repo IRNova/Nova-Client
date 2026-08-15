@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.7.0-beta (2026-08-15)
+
+Two fixes for restricted networks, by the Nova team.
+
+- When the SNI-block bypass is on and connected, the server list now shows a live
+  ping for each server (measured through the tunnel) and a green dot on the one
+  actually carrying traffic, so you can see which servers work and which one you
+  are on.
+- A failed subscription refresh no longer wipes your servers. If the panel can't
+  be reached (its domain is blocked), the app keeps your saved servers and shows
+  a small note instead of an error, so you can still connect. The list updates on
+  its own once the panel is reachable again, without dropping your connection.
+
 ## v1.6.0-beta (2026-08-15)
 
 Exact-match the anti-censorship fragmentation, by the Nova team.
