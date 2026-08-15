@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.6.0-beta (2026-08-15)
+
+Exact-match the anti-censorship fragmentation, by the Nova team.
+
+- The SNI-block bypass now splits the connection handshake into the exact same
+  packet sizes as the PattNG method, byte for byte, instead of an approximation.
+  On the strictest networks the approximation was not enough; this build should
+  behave the same as PattNG there. It stays off by default, applies only to the
+  clean-IP servers, and turns itself on when nothing else connects.
+
 ## v1.5.1-beta (2026-08-15)
 
 SNI-block bypass fixes from tester feedback, by the Nova team.
