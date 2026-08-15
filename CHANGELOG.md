@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.5.0-beta (2026-08-15)
+
+For the networks that block the worker domain itself, by the Nova team.
+
+- SNI-block bypass, for networks that have started blocking the workers.dev
+  and pages.dev domains themselves. Nova can now run the profile that testers
+  found gets through in PattNG: plain TLS with a fixed cipher list instead of a
+  browser fingerprint, and a fragmented handshake, on the clean-IP servers only.
+  It stays off by default. If every server in a subscription fails to carry
+  traffic, Nova turns it on for that subscription by itself, reconnects, and
+  tells you; there is also a switch at the top of the server list. Links from
+  cf-optimizor (fp=unsafe, cs, fm) import as-is, and a hardened Nova server
+  re-shares in that same format so it pastes into PattNG.
+
 ## v1.4.0-beta (2026-08-15)
 
 Every platform on the same code, and a cleaner app, by the Nova team.
