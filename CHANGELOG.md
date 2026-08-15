@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.4.0-beta (2026-08-15)
+
+Every platform on the same code, and a cleaner app, by the Nova team.
+
+- A modernized interface. The dashboard, server list, node list, settings and
+  first-run screens were reworked around one clear focus per screen, with
+  colour reserved for state and the measured verdict the most legible thing on
+  a server row. Nothing animates while the app is idle any more, which is a
+  real battery win: the connect orb used to repaint sixty times a second all
+  day.
+- Windows and macOS get the same VPN core as the phone. The desktop core had
+  been an older stock build with no WireGuard, no NaiveProxy and no AmneziaWG in
+  it, so those servers failed on desktop while working on Android. Both desktop
+  cores are now built from the same source and patch as the Android one.
+- iOS now requires iOS 15 or later, ahead of Apple's 2027 requirement.
+- NaiveProxy servers work now. Nova Server has always been able to create one,
+  and the phone app's VPN core could always run it, but the app could not read
+  the link, so a NaiveProxy server appeared in no client at all. On desktop it
+  says plainly that this build's core cannot run it, instead of the core dying
+  at startup.
+- A subscription no longer loses servers in silence. If it contains something
+  Nova cannot run, the server list says how many and what kind, so a short list
+  is explained instead of looking like configs went missing.
+
 ## v1.3.0-beta (2026-08-14)
 
 An honesty update, by the Nova team. Nova now tells you what it actually knows
