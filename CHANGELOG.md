@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.8.0-beta (2026-08-15)
+
+Server list and dashboard improvements, by the Nova team.
+
+- The server list opens instantly. If your subscription's address is blocked, it
+  shows your saved servers right away and refreshes in the background instead of
+  sitting on a loading spinner.
+- When connected, each server shows a live ping measured through the tunnel and a
+  green dot marks the one carrying traffic; a server tested but not answering reads
+  "no response" instead of "not testable".
+- The dashboard shows a live line with the server you are connected through, and
+  "Secure" appears sooner after connecting.
+- The refresh button re-checks your servers and reconnects to the best one.
+- Nova checks once a day for a new version, with a "Check for updates" link in
+  Settings.
+- A cleaner look: the Add button is now a floating button over the server list.
+
 ## v1.7.0-beta (2026-08-15)
 
 Two fixes for restricted networks, by the Nova team.
