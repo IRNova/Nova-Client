@@ -43,10 +43,10 @@
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
       <img src="https://img.icons8.com/color/96/android-os.png" width="54" alt="Android" /><br/>
       <h3 style="margin: 10px 0 5px 0; color: #22d3ee;">اندروید (Android)</h3>
-      <p style="margin: 0; font-size: 13px; color: #94a3b8;">v1.1.0-beta</p>
+      <p style="margin: 0; font-size: 13px; color: #94a3b8;">1.34.2 (281)</p>
       <br/>
-      <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none;"><img src="https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=green" /></a><br/>
-      <a href="https://github.com/IRNova/Nova-Client/releases" style="text-decoration: none; display: inline-block; margin-top: 5px;"><img src="https://img.shields.io/badge/Direct_APK-0ea5e9?style=for-the-badge&logo=android&logoColor=white" /></a>
+      <a href="https://play.google.com/store/apps/details?id=online.novaproxy.nova_client" style="text-decoration: none;"><img src="https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=green" /></a><br/>
+      <p style="font-size: 12px;">کاربران نسخه گیت‌هاب: پیش از انتقال به گوگل‌پلی از کانفیگ‌ها خروجی بگیرید؛ امضای نصب متفاوت است.</p>
     </td>
     <!-- iOS Card -->
     <td align="center" style="width: 33%; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; background: #05060a; color: #fff;">
